@@ -1,0 +1,23 @@
+
+
+<p>
+  <strong>Name:</strong>
+
+   
+        <%= image_tag(@picture.avatar)%>
+  
+  
+</p>
+<p>
+  <strong>Name:</strong>
+  <%=h @picture.name %>
+</p>
+
+
+
+
+<p>
+  <%= link_to "Edit", edit_picture_path(@picture) %> |
+  <%= link_to "Destroy", @picture, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", pictures_path %>
+</p>
